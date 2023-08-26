@@ -4,18 +4,23 @@
   "type": "module",
   "description": "um simples ambiente typescript, para projetos pessoais",
   "main": "dist/index.js",
-  "repository": {
-    "url": "https://github.com/DestinyFrog/typescript-environment"
-  },
+  "repository": "https://github.com/DestinyFrog/typescript-environment.git",
+  "author": "DestinyFrog <107517847+DestinyFrog@users.noreply.github.com>",
+  "license": "MIT",
   "scripts": {
     "tsc": "npx tsc",
-    "dev": "node dist",
+    "dev": "npx tsc && node dist",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "author": "destinyfrog",
-  "license": "ISC",
+  "dependencies": {
+    "@types/node": "^20.5.6",
+    "@typescript-eslint/eslint-plugin": "^6.4.1",
+    "@typescript-eslint/parser": "^6.4.1",
+    "eslint": "^8.48.0",
+    "readline-sync": "^1.4.10",
+    "typescript": "^5.2.2"
+  },
   "devDependencies": {
-    "@types/node": "^20.5.3",
-    "typescript": "^5.1.6"
+    "@types/readline-sync": "^1.4.4"
   }
 }
