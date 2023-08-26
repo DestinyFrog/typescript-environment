@@ -1,9 +1,12 @@
+import { question } from "readline-sync"
+import calculus from "./lib/calculus.js"
 
-console.time()
+const a = parseInt( question( "Type 'a' value: " ) )
+const b = parseInt( question( "Type 'b' value: " ) )
 
-for ( let i = 0; i < 6; i++ ) {
-    // mark your code here
-    console.log( "call", i, "times" )
-}
+console.log( "\nAvailable operations:" )
+Object.keys( calculus ).map( calc => console.log( "-", calc ) )
+const operation = question( "Choose one aritmetic operation? " )
 
-console.timeEnd()
+const result = calculus[operation]( a, b )
+console.log( result )
