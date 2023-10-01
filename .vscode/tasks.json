@@ -7,6 +7,17 @@
 			"problemMatcher": [],
 			"label": "npm: dev",
 			"detail": "node dist"
+		},
+		{
+			"type": "npm",
+			"script": "tsc",
+			"problemMatcher": [],
+			"label": "npm: tsc",
+			"detail": "npx tsc",
+			"group": {
+				"kind": "build",
+				"isDefault": true
+			}
 		}
 	]
 }

@@ -21,5 +21,4 @@ funcionamento do programa.
 
 ## Tecnologias a serem adicionadas
 
-- gulp
-- webpack
+- gulp/webpack
